@@ -5,8 +5,8 @@ return array(
 	
 	'invitefriends:registration_disabled' => 'Rejestracja nowych użytkowników została zablokowana. Nie można zaprosić nowych osób.',
 	
-	'invitefriends:introduction' => 'To invite friends to join you on this network, enter their email addresses and a message they will receive with your invitation',
-	'invitefriends:emails' => 'Email addresses (one per line)',
+	'invitefriends:introduction' => '',
+	'invitefriends:emails' => '',
 	'invitefriends:message' => 'Wiadomość',
 	'invitefriends:subject' => 'Zaproszenie do dołączenia do %s',
 
@@ -16,18 +16,8 @@ return array(
 	'invitefriends:already_members' => 'Następujący użytkownicy już dołączyli: %s',
 	'invitefriends:noemails' => 'Nie wprowadzono adresu e-mail.',
 	
-	'invitefriends:message:default' => 'Hi,
+	'invitefriends:message:default' => '',
 
-I want to invite you to join my network here on %s.',
-
-	'invitefriends:email' => 'You have been invited to join %s by %s. They included the following message:
-
-%s
-
-To join, click the following link:
-
-%s
-
-You will automatically add them as a friend when you create your account.',
+	'invitefriends:email' => '',
 	
 );

@@ -34,15 +34,15 @@ return array(
 	'twitter_api:deprecated_callback_url' => 'Adres zwrotny URL został zmieniony w API Twittera na %s. Poproś administratora o zmianę.',
 
 	'twitter_api:interstitial:settings' => 'Zmień swoje ustawienia',
-	'twitter_api:interstitial:description' => 'You\'re almost ready to use %s! We need a few more details before you can continue. These are optional, but will allow you login if Twitter goes down or you decide to unlink your accounts.',
+	'twitter_api:interstitial:description' => '',
 
-	'twitter_api:interstitial:username' => 'This is your username. It cannot be changed. If you set a password, you can use the username or your email address to log in.',
+	'twitter_api:interstitial:username' => '',
 
 	'twitter_api:interstitial:name' => 'To jest nazwa, którą inne osoby zobaczą wchodząc z Tobą w interakcje.',
 
 	'twitter_api:interstitial:email' => 'Twój adres e-mail. Inni użytkownicy domyślnie go nie zobaczą.',
 
-	'twitter_api:interstitial:password' => 'A password to login if Twitter is down or you decide to unlink your accounts.',
+	'twitter_api:interstitial:password' => '',
 	'twitter_api:interstitial:password2' => 'To samo hasło, ponownie.',
 
 	'twitter_api:interstitial:no_thanks' => 'Nie, dziękuję',
