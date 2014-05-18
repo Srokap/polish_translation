@@ -25,6 +25,8 @@ $excluded = array(
 	'ElggPlugin:Dependencies:Plugin',
 	'admin:plugins:category:multimedia',
 	'install:admin:help:email',
+	'menu:page:header:develop',
+	'admin:plugins:category:development',
 	'aa', 'ab', 'af', 'am', 'as', 'ay', 'az', 'ba', 'be', 'bg', 'bh', 'bi', 'bn', 'bo', 'br', 'ca', 'co', 'cs', 'cy', 'da', 'dz', 'eo', 'eu', 'fi', 'fj', 'fo',
 	'fy', 'ga', 'gd', 'gl', 'gn', 'gu', 'he', 'ha', 'hi', 'hr', 'hu', 'ia', 'id', 'ie', 'ik', 'is', 'it', 'iu', 'iw', 'ja', 'ji', 'jw', 'ka', 'kk', 'kl', 'km', 'ks',
 	'ku', 'ky', 'la', 'ln', 'lo', 'lt', 'lv', 'mg', 'mi', 'mk', 'ml', 'mn', 'mo', 'mr', 'ms', 'mt', 'my', 'na', 'ne', 'nl', 'no', 'oc', 'om', 'or', 'pa',
@@ -58,6 +60,10 @@ foreach ($i as $key => $file) {
 		print_r($result);
 	}
 
+}
+
+if ($exitCode === 0) {
+	echo "Everything checks out.";
 }
 
 exit($exitCode);
