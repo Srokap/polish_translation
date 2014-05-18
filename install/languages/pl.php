@@ -113,7 +113,7 @@ return array(
 	'install:error:databasesettings' => '',
 	'install:error:database_prefix' => 'Niepoprawne znaki w prefiksie bazy danych',
 	'install:error:oldmysql' => '',
-	'install:error:nodatabase' => 'Unable to use database %s. It may not exist.',
+	'install:error:nodatabase' => 'Nie można było użyć bazy danych %s. Możliwe, że nie istnieje.',
 	'install:error:cannotloadtables' => 'Nie można wczytać tabeli bazy danych',
 	'install:error:tables_exist' => '',
 	'install:error:readsettingsphp' => '',

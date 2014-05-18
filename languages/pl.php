@@ -903,11 +903,11 @@ return array(
 	'title' => "Tytuł",
 	'description' => "Opis",
 	'tags' => "Tagi",
-	'spotlight' => "Spotlight",
+	'spotlight' => "Wyróżnienie",
 	'all' => "Wszyscy",
 	'mine' => "Moje",
 
-	'by' => 'by',
+	'by' => 'przez',
 	'none' => 'żadne',
 
 	'annotations' => "Adnotacje",
@@ -1049,7 +1049,7 @@ Jak już się zalogujesz, gorąco polecamy zmianę hasła.
 
 	'installation:httpslogin' => "Włącz aby użytkownicy logowali się przy użyciu HTTPS. Musisz mieć włączone https na serwerze, aby ta opcja zadziałała.",
 	'installation:httpslogin:label' => "Włącz logowanie przez HTTPS",
-	'installation:view' => "Enter the view which will be used as the default for your site or leave this blank for the default view (if in doubt, leave as default):",
+	'installation:view' => "Wprowadź widok, który będzie domyślnie używany przez twoją stronę lub pozostaw wartość domyślną (w razie wątpliwości, pozostaw wartość domyślną):",
 
 	'installation:siteemail' => "Adres e-mail strony (używany do wysyłania systemowych e-mail)",
 
@@ -1245,7 +1245,7 @@ Nie możesz odpowiedzieć na ten e-mail.",
 	'actiongatekeeper:missingfields' => 'W formularzu brakuje pól _token lub _ts',
 	'actiongatekeeper:tokeninvalid' => "Formularz wygasł, proszę spróbować ponownie.",
 	'actiongatekeeper:timeerror' => 'Formularz wygasł, prosimy odświeżyć i spróbować ponownie.',
-	'actiongatekeeper:pluginprevents' => 'A extension has prevented this form from being submitted.',
+	'actiongatekeeper:pluginprevents' => 'Rozszerzenie zablokowało wysłanie formularza.',
 	'actiongatekeeper:uploadexceeded' => 'Rozmiar wgranego pliku (lub plików) przekroczył limit ustawiony przez administratora',
 	'actiongatekeeper:crosssitelogin' => "Przykro nam, ale logowanie z innej domeny jest niedozwolone. Spróbuj ponownie.",
 
