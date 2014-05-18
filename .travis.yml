@@ -1,0 +1,14 @@
+language: php
+php:
+ - 5.5
+
+before_script:
+ - curl -O https://raw.github.com/pypa/pip/master/contrib/get-pip.py
+ - python get-pip.py
+ - pip install transifex-client
+ - tx pull -l en
+ - tx pull -l pl --mode=translator
+
+script:
+ - php -f ./validate.php
+ 
