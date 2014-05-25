@@ -20,8 +20,9 @@ username = SrokapBot
 
 EOF;
 
-if (file_put_contents('~/.transifexrc', $fileContents) === false) {
-	echo "Error writing ~/.transifexrc";
+$homePath = getenv('HOME');
+if (file_put_contents($homePath . '/.transifexrc', $fileContents) === false) {
+	echo "Error writing $homePath/.transifexrc";
 	exit(3);
 }
 
