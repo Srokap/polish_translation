@@ -1,14 +1,15 @@
 language: php
 php:
- - 5.5
-
+	- 5.5
 before_script:
- - curl -O https://raw.github.com/pypa/pip/master/contrib/get-pip.py
- - python get-pip.py
- - pip install transifex-client
- - tx pull -l en
- - tx pull -l pl --mode=translator
-
+	- curl -O https://raw.github.com/pypa/pip/master/contrib/get-pip.py
+	- python get-pip.py
+	- pip install transifex-client
+	- php bin/setup_transifex.php
+	- tx pull -l en
+	- tx pull -l pl --mode=translator
 script:
- - php -f ./validate.php
- 
+	- php -f ./validate.php
+env:
+  global:
+    secure: C8B2vMnWmwINPXQzHuhvm86kqJy8O6NlJ0gmMOjOPFgSgvfXXcZv0pbNcpswgbJc8IWmsfTpcfY2T/RikMklSbJ8F21+gt47rPxtN/sG/XpsWt/K0YU8Ffs14DOgEhtFmylqbKNHoR1Zsm/NPgLwsXPKcrEO1PdDC6V+kxT8sio=

@@ -44,6 +44,9 @@ $i = new RegexIterator($i, "/$lang\.php/");
 
 $exitCode = 0;
 
+$badCount = 0;
+$filteredCount = 0;
+
 foreach ($i as $key => $file) {
 	$path = $file->getPathName();
 	$enPath = dirname($path) . DIRECTORY_SEPARATOR . 'en.php';
@@ -53,7 +56,12 @@ foreach ($i as $key => $file) {
 	$valsBase = include($enPath);
 	
 	$result = array_intersect_assoc((array)$valsCustom, (array)$valsBase);
+	$filtered = array_intersect_key($result, array_flip($excluded));
 	$result = array_diff_key($result, array_flip($excluded));
+
+	$badCount += count($result);
+	$filteredCount += count($filtered);
+
 	if (count($result) > 0) {
 		echo "Found untranslated strings in file $path\n";
 		$exitCode = 1;
@@ -61,6 +69,8 @@ foreach ($i as $key => $file) {
 	}
 
 }
+
+echo "There are $badCount badly translated strings and $filteredCount filtered ones of total " . count($excluded) . " exceptions.";
 
 if ($exitCode === 0) {
 	echo "Everything checks out.";
