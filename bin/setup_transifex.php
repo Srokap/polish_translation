@@ -25,5 +25,5 @@ if (file_put_contents('~/.transifexrc', $fileContents) === false) {
 	exit(3);
 }
 
-echo "Everything checks out."
+echo "Everything checks out.";
 exit(0);
