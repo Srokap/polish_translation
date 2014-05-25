@@ -2,7 +2,7 @@ language: php
 php:
   - 5.5
 before_script:
-  - pip install transifex-client
+  - sudo pip install transifex-client
   - php bin/setup_transifex.php
   - tx pull -l en
   - tx pull -l pl --mode=translator
