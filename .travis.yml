@@ -2,8 +2,6 @@ language: php
 php:
   - 5.5
 before_script:
-  - curl https://raw.githubusercontent.com/pypa/pip/master/contrib/get-pip.py > get-pip.py
-  - python get-pip.py
   - pip install transifex-client
   - php bin/setup_transifex.php
   - tx pull -l en
